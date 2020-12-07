@@ -6,6 +6,7 @@ namespace POO_Heranca
     {
         static void Main(string[] args)
         {
+             Console.ForegroundColor= ConsoleColor.Magenta;
            PessoaFisica pf = new PessoaFisica();
             pf.cPF = "000.000.000-00";
             pf.rG= "111.111.111-1";
@@ -20,8 +21,10 @@ namespace POO_Heranca
               pj.rG= "111.111.111-1";
               pj.nome= "Yuri";
 
+            Console.ForegroundColor= ConsoleColor.Cyan;
             Console.WriteLine(pj.DarBoasVindas(pj.nome));
             Console.WriteLine(pj.ValidarCnpj(pj.cNPJ));
+
 
 
 
